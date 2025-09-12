@@ -44,14 +44,18 @@ export class BookingController extends Controller {
     public createBooking() {
         this.response.render("pages/booking.ejs")
     }
-    // A REMETTRE ds le code avec la BDD :
-    // public addBooking() {
-    //     const newBooking = {
-    //         id: booking.lenght +1,
-    //         booking_date: Date,
-    //         ticket_quantity: Number,
-    //         id_ticket: ,
-    //     }
-    // }
+
+    // A MODIFIER l'insertion de la BDD :
+    public addBooking() {
+        //code temporaire en attendant la BDD :
+        this.response.send("addBooking pas encore implémenté 🚧 Modifier lignes ci-dessous :");
+
+        // const newBooking = {
+        //     id: booking.lenght +1,
+        //     booking_date: Date,
+        //     ticket_quantity: Number,
+        //     id_ticket: ,
+        // }
+    }
 
 }

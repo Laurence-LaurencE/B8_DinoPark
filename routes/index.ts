@@ -2,7 +2,7 @@ import { Router } from "express";
 //importer tous mes "ss-routers" :
 import bookingRouter from "./bookingRouter";
 import globalRouter from "./globalRouter";
-// import paymentRouter from "./paymentRouter";
+import paymentRouter from "./paymentRouter";
 
 // lui donner 1 const qui contient la fonction Route
 
@@ -11,8 +11,8 @@ const router = Router(); // contient le chemin
 // puis utilise le chemin : 
 // (ci-dessous on lie les autres routers à l'indexRacine)
 router.use(globalRouter);
-router.use(bookingRouter);
-// router.use(paymentRouter);
+router.use(`/booking`, bookingRouter);
+router.use(`/payment`, paymentRouter);
 
 //
 

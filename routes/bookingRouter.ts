@@ -19,12 +19,13 @@ bookingRouter.get("/add", (request, response) => {
     controller.createBooking();
 });
 
-//Add post _ traiter form
-// bookingRouter.post("/", (request, response) => {
-//     const controller = new BookingController(request, response);
-//     controller.addBooking();
+// Add post _ traiter form
+// A REMETTRE ds le code avec la BDD :
+bookingRouter.post("/", (request, response) => {
+    const controller = new BookingController(request, response);
+    controller.addBooking();
     
-// });
+});
 
 
 export default bookingRouter;

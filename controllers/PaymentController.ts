@@ -1,0 +1,20 @@
+import { Controller } from "../libs/Controller";
+
+//import repository  => à la place de nos const ci-dessous :
+const Payment = [
+    { id: 1, price: "2000"},
+    { id: 2, price: "2000"},
+]
+
+export class PaymentController extends Controller {
+    public paymentpage() {
+        this.response.render("pages/payment");
+    }
+
+//createPayment()
+
+//addPayment()
+
+
+}
+
