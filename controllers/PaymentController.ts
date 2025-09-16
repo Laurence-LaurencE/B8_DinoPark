@@ -11,9 +11,13 @@ export class PaymentController extends Controller {
         this.response.render("pages/payment");
     }
 
-//createPayment()
+    public createPayment() {
+        this.response.render("pages/payment");
+    }
 
-//addPayment()
+    public addPayment() {
+        this.response.render("pages/payment");
+}
 
 
 }

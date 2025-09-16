@@ -8,24 +8,22 @@ import { BookingController } from "../controllers/BookingController";
 const bookingRouter = Router();
 
 //bookingform _ browse
-bookingRouter.get("/", (request, response) => {
-    const controller = new BookingController(request, response);
-    controller.browseBooking();
+bookingRouter.get("/all-bookings", (request, response) => {
+  const controller = new BookingController(request, response);
+  controller.browseBooking();
 });
 
 //Add get _ afficher form
-bookingRouter.get("/add", (request, response) => {
-    const controller = new BookingController(request, response);
-    controller.createBooking();
+bookingRouter.get("/addget-booking", (request, response) => {
+  const controller = new BookingController(request, response);
+  controller.createBooking();
 });
 
 // Add post _ traiter form
 // A REMETTRE ds le code avec la BDD :
-bookingRouter.post("/", (request, response) => {
-    const controller = new BookingController(request, response);
-    controller.addBooking();
-    
+bookingRouter.post("/post_booking", (request, response) => {
+  const controller = new BookingController(request, response);
+  controller.addBooking();
 });
-
 
 export default bookingRouter;

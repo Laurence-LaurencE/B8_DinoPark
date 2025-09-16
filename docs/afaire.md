@@ -1,7 +1,41 @@
 <!-- a faire :   -->
 
+<!-- ROUTERS 
+
+# router Index
+
+# home = global
+_ dinos
+
+# booking >get >post
+# payment >get >post >Confirm get/:id
+
+_ tickets
+
+_admin_ >log >dboard
+
+
+-->
+
 <!-- index.ts Racine => ajouter connexion à chque routes
 -->
+
+<!-- CONTROLLERS 
+_Libs/Controllers
+
+_ home = global
+_ dinos
+
+_ booking >get >post
+_ payment >get >post >Confirm get/:id
+
+_ tickets
+
+_admin_ >log >dboard
+
+
+-->
+
 
 <!--=======================================================-->
 <!-- router
@@ -18,6 +52,11 @@
 // confirm récap
 -->
 
+
+
+<!--SRC/ts => créer un .ts pour chaque views
+ 
+ -->
 
 <!--=======================================================-->
 <!-- connexion BDD
@@ -44,3 +83,8 @@
 -->
 
 
+<!--================================================================ 
+REPO + MODELS
+
+
+-->
